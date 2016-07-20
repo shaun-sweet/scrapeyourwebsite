@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+/*
+***************
+BODY COMPONENTS
+***************
+*/
+
+header {
+	display: flex;
+}
+
+main {
+	display: flex;
+	flex: 5 0 auto;
+	flex-flow: column;
+}
+
+footer {
+	display: flex;
+	flex: 1;
+}
+
+/*
+***************
+HEADER COMPONENTS
+***************
+*/
+
+h1 {
+}
+nav {
+	display: flex;
+	border: 1px black solid;
+}
+
+#logo {
+	margin-left: auto;
+}
+
+#site-title {
+	align-self: center;
+	border: 1px black solid;
+}
+
+/*
+***************
+MAIN COMPONENTS
+***************
+*/
+
+#main-content {
+	display: flex;
+}
+
+#home-contact {
+	display: flex;
+}
+
+/*
+***************
+FOOTER COMPONENTS
+***************
+*/
+
+#copyright {
+	align-self: flex-end;
+}
+
+/*
+***************
+HOME CONTACT COMPONENTS
+***************
+*/
+
+#home-contact-form {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}

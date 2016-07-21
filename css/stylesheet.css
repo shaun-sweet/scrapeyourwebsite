@@ -1,7 +1,15 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -13,17 +21,22 @@ BODY COMPONENTS
 
 header {
 	display: flex;
+	background-color: white;
 }
 
 main {
 	display: flex;
 	flex: 5 0 auto;
 	flex-flow: column;
+	align-items: center;
+	background-color: #fbfdff;
 }
 
 footer {
 	display: flex;
 	flex: 1;
+	width: 100%;
+	background-color: #E3F4FD;
 }
 
 /*
@@ -32,20 +45,55 @@ HEADER COMPONENTS
 ***************
 */
 
-h1 {
-}
-nav {
+.nav-container{
+	width: 100%;
 	display: flex;
-	border: 1px black solid;
-}
-
-#logo {
-	margin-left: auto;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 #site-title {
 	align-self: center;
-	border: 1px black solid;
+	color: #3A3A3C;
+	font-size: 3em;
+}
+
+#site-title a {
+	text-decoration: none;
+	color: #3A3A3C;
+}
+
+.website {
+	color: black;
+}
+
+nav {
+	display: flex;
+	background-color: #B3E1FA;
+	font-weight: bold;
+	border-radius: 5px;
+	align-items: center;
+}
+
+nav a {
+	display: block;
+}
+
+tab {
+	text-align: center;
+	flex: 1;
+	font-size: 1.5em;
+	border-left: dotted 5px #E3F4FD;
+	padding: 3px;
+}
+
+tab a{
+	text-decoration: none;
+	color: #3A3A3C;
+}
+
+#logo {
+	margin-left: auto;
 }
 
 /*
@@ -56,11 +104,21 @@ MAIN COMPONENTS
 
 #main-content {
 	display: flex;
+	width: 80%;
+	flex-flow: column;
+	flex: 1;
+}
+
+h2 {
+	text-align: center;
+	color: #3A3A3C;
 }
 
 #home-contact {
 	display: flex;
 }
+
+
 
 /*
 ***************
@@ -81,5 +139,79 @@ HOME CONTACT COMPONENTS
 #home-contact-form {
 	display: flex;
 	flex-flow: column;
+	border-radius: 10px;
+	width: 500px;
+	background-color: #B3E1FA;
+	padding: 20px;
+	text-decoration: bold;
+}
+
+#home-contact-form label{
+	color: #3A3A3C;
+	font-weight: bold;
+}
+
+#home-contact input{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    font-family: inherit;
+    font-weight: bold;
+    width: 80px;
+    height:25px;
+    background: #E3F4FD;
+}
+/*
+***************
+PRICING COMPONENTS
+***************
+*/
+
+#price-container{
+	display: flex;
 	width: 100%;
 }
+
+.price{
+	background-color: #9bd8f8;
+	border-radius: 10px;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	margin: 3px;
+}
+
+.number{
+	font-weight: bold;
+	font-size: 5em;
+}
+
+/*
+***************
+FAQ COMPONENTS
+***************
+*/
+
+.q{
+	background-color: #B3E1FA;
+	color: #E3F4FD;
+	font-size: 1.5em;
+	display: inline-block;
+	padding: 3px 5px;
+	border-radius: 5px;
+	margin: 3px;
+}
+
+.answer{
+	margin-left: auto;
+	width: 95%;
+}
+

@@ -18,6 +18,11 @@ TEXT STYLING
 ***************
 */
 
+a:hover {
+	text-decoration: none;
+}
+
+
 main h3 {
 	border-bottom: 1px solid #727272;
 }
@@ -112,6 +117,14 @@ nav a {
 	display: block;
 	color: #fff;
 	text-decoration: none;
+}
+
+tab:hover {
+	background-color: #F5F5F5;
+}
+
+tab:hover a{
+	color: #448AFF;
 }
 
 tab {

@@ -18,6 +18,10 @@ TEXT STYLING
 ***************
 */
 
+main h3 {
+	border-bottom: 1px solid #727272;
+}
+
 a {
 	color: #448AFF;
 }
@@ -170,12 +174,8 @@ HOME CONTACT COMPONENTS
 	width: 500px;
 	background-color: #9E9E9E;
 	padding: 20px;
+	margin-bottom: 2em;
 	text-decoration: bold;
-}
-
-#home-contact-form label{
-	color: #3A3A3C;
-	font-weight: bold;
 }
 
 #home-contact input{
@@ -190,6 +190,7 @@ input {
 	padding: .3em;
 }
 input[type=submit] {
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,.2);
     border-radius: 2px;
     border: 0;
     color: white;
@@ -211,7 +212,7 @@ PRICING COMPONENTS
 }
 
 .price{
-	background-color: #B6B6B6;
+	background-color: #9E9E9E;
 	border-radius: 2px;
 	box-shadow: 0px 2px 6px rgba(0,0,0,.3);
 	display: flex;

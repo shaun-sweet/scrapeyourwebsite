@@ -9,9 +9,29 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
+/*
+***************
+TEXT STYLING
+***************
+*/
+
+a {
+	color: #448AFF;
+}
+
+html {
+	letter-spacing: 0.08em;
+}
+
+main h1 {
+	color: #212121;
+	text-align: center;
+	margin-bottom: 2em;
+	border-bottom: solid 1px #B6B6B6;
+}
 
 /*
 ***************
@@ -20,8 +40,11 @@ BODY COMPONENTS
 */
 
 header {
+	box-shadow: 2px 0px 6px rgba(0,0,0,0.2);
 	display: flex;
-	background-color: white;
+	z-index: 2;
+	height: 250px;
+	/*background-color: white;*/
 }
 
 main {
@@ -29,14 +52,18 @@ main {
 	flex: 5 0 auto;
 	flex-flow: column;
 	align-items: center;
-	background-color: #fbfdff;
+	background-color: #F5F5F5;
+	color: #212121;
+
 }
 
 footer {
 	display: flex;
 	flex: 1;
 	width: 100%;
-	background-color: #E3F4FD;
+	background-color: #616161;
+	color: #B6B6B6;
+	border-top: 1px solid #B6B6B6;
 }
 
 /*
@@ -50,6 +77,7 @@ HEADER COMPONENTS
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+
 }
 
 #site-title {
@@ -64,33 +92,35 @@ HEADER COMPONENTS
 }
 
 .website {
-	color: black;
+	color: #448AFF;
 }
 
 nav {
 	display: flex;
-	background-color: #B3E1FA;
+	
 	font-weight: bold;
-	border-radius: 5px;
+	border-radius: 2px;
 	align-items: center;
+
 }
 
 nav a {
 	display: block;
+	color: #fff;
+	text-decoration: none;
 }
 
 tab {
+	margin: .5em;
+	background-color: #9E9E9E;
 	text-align: center;
 	flex: 1;
 	font-size: 1.5em;
-	border-left: dotted 5px #E3F4FD;
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,.2);
 	padding: 3px;
 }
 
-tab a{
-	text-decoration: none;
-	color: #3A3A3C;
-}
+
 
 #logo {
 	margin-left: auto;
@@ -109,10 +139,6 @@ MAIN COMPONENTS
 	flex: 1;
 }
 
-h2 {
-	text-align: center;
-	color: #3A3A3C;
-}
 
 #home-contact {
 	display: flex;
@@ -139,9 +165,10 @@ HOME CONTACT COMPONENTS
 #home-contact-form {
 	display: flex;
 	flex-flow: column;
-	border-radius: 10px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,.3);
 	width: 500px;
-	background-color: #B3E1FA;
+	background-color: #9E9E9E;
 	padding: 20px;
 	text-decoration: bold;
 }
@@ -157,14 +184,19 @@ HOME CONTACT COMPONENTS
 	margin-bottom: 12px;
 }
 
+input {
+	border-radius: 2px;
+	border: 0;
+	padding: .3em;
+}
 input[type=submit] {
-    border-radius: 5px;
+    border-radius: 2px;
     border: 0;
-    font-family: inherit;
+    color: white;
     font-weight: bold;
     width: 80px;
     height:25px;
-    background: #E3F4FD;
+    background: #448AFF;
 }
 /*
 ***************
@@ -175,23 +207,24 @@ PRICING COMPONENTS
 #price-container{
 	display: flex;
 	width: 100%;
+	justify-content: space-around;
 }
 
 .price{
-	background-color: #9bd8f8;
-	border-radius: 10px;
-	height: 100%;
+	background-color: #B6B6B6;
+	border-radius: 2px;
+	box-shadow: 0px 2px 6px rgba(0,0,0,.3);
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
+	margin: 2em;
 	align-items: center;
-	flex: 1;
-	margin: 3px;
+	width: 300px;
+	padding: 1em;
 }
 
 .number{
 	font-weight: bold;
-	font-size: 5em;
+	font-size: 3em;
 }
 
 /*
@@ -201,7 +234,7 @@ FAQ COMPONENTS
 */
 
 .q{
-	background-color: #B3E1FA;
+	background-color: #607D8B;
 	color: #E3F4FD;
 	font-size: 1.5em;
 	display: inline-block;

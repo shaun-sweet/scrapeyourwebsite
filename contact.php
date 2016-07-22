@@ -1,47 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="./css/stylesheet.css">
-	<meta charset="UTF-8">
-	<title>Scrape Your Website</title>
-</head>
-<body>
-	<header>
-		<div class="nav-container">
-			<h1 id="site-title">
-				<a href = "./index.php">Scrape Your <span class = "website"> .Website </span></a>
-			</h1>
-			<nav> href = 
-				<tab> <a"./about.php"> About </a> </tab>
-				<tab> <a href = "./prices.php"> Prices </a> </tab>
-				<tab> <a href = "./faq.php"> FAQ </a> </tab>
-				<tab> <a href = "./contact.php"> Contact </a> </tab>
-			</nav>
-		</div>
-		<div id="logo">
-			<img src="./imgs/scraper.png" alt="Scrape your website Logo">
-		</div>
-	</header>
-	<main>
-			<h2> Contact </h2>
-		<div id="home-contact">
-			<form id="home-contact-form" action="#" method="post">
-				<label for="name">Name:</label>
-				<input name="name" placeholder="Name..." type="text">
-				<label for="email">Email:</label>
-				<input name="email" placeholder="Email..." type="text">
-				<label for="message">Message us:</label>
-				<input name="message" placeholder="Ask us a question!" type="text">
-				<input name="submit" type="submit">
-			</form>
-		</div>
-	</main>
-	<footer>
-		<div id="copyright">
-			copyright stuff here
-		</div>
-		
-	</footer>
-</body>
-</html>
+<?php include('./header.php') ?>
+<main>
+		<h1> Contact </h1>
+	<div id="home-contact">
+		<form id="home-contact-form" action="/form-mailer.php" method="post">
+			<label for="name">Name:</label>
+			<input id="name" name="name" placeholder="Name:" type="text">
+
+			<label for="email">Email:</label>
+			<input id="email" name="email" placeholder="info@scrapeyour.website" type="text">
+
+			<label for="quantity">Number of Websites to Scrape:</label>
+			<input id="quantity" name="quantity" type="text" placeholder="1">
+
+			<label for="data-sets">What data do you want scraped?</label>
+			<input id="data-sets" name="data-sets" type="text" placeholder="Product name, Category, Product ID, Address etc..">
+
+			<label for="payment">Preferred payment method?</label>
+			<input id="payment" name="payment" type="text" placeholder="Visa, Mastercard, Paypal, Bitcoin, Venmo">
+
+			<label for="message">Additional thoughts:</label>
+			<input id="message" name="message" placeholder="Ask us a question!" type="text">
+			<input name="submit" type="submit">
+		</form>
+	</div>
+</main>
+<?php include('./footer.php') ?>

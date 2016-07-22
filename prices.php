@@ -1,55 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="./css/stylesheet.css">
-	<meta charset="UTF-8">
-	<title>Scrape Your Website</title>
-</head>
-<body>
-	<header>
-		<div class="nav-container">
-			<h1 id="site-title">
-				<a href="./index.php">Scrape Your<span class="website"> .Website</span></a>
-			</h1>
-			<nav>
-				<tab><a href="./about.php"> About</a></tab>
-				<tab><a href="./prices.php">Prices</a></tab>
-				<tab><a href="./faq.php">FAQ</a></tab>
-				<tab><a href="./contact.php">Contact</a></tab>
-			</nav>
-		</div>
-		<div id="logo">
-			<img src="./imgs/scraper.png" alt="Scrape your website Logo">
-		</div>
-	</header>
-	<main>
-		<div id="main-content">
-			<h2> Pricing </h2>
-			<div id="price-container">
-				<div class="price">
-					<h3>A Thing</h3>
-					<span class="number">$$</span>
-					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum a velit sit amet blandit. In lectus tellus, dictum non magna id, viverra tincidunt risus. Mauris cursus erat non maximus ultrices. Etiam et mi est.</p>
-				</div>
-				<div class="price">
-					<h3>A Thing</h3>
-					<span class="number">$$</span>
-					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum a velit sit amet blandit. In lectus tellus, dictum non magna id, viverra tincidunt risus. Mauris cursus erat non maximus ultrices. Etiam et mi est.</p>
-				</div>
-				<div class="price">
-					<h3>A Thing</h3>
-					<span class="number">$$</span>
-					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum a velit sit amet blandit. In lectus tellus, dictum non magna id, viverra tincidunt risus. Mauris cursus erat non maximus ultrices. Etiam et mi est.</p>
-				</div>
+<?php include('./header.php') ?>
+<main>
+	<div id="main-content">
+		<h1> Pricing </h1>
+		<div id="price-container">
+			<div class="price">
+				<h3>Basic Scrape</h3>
+				<span class="number">$50</span>
+				<p class="description">The minimum we charge is $50 to start scraping.  This covers 1 basic website where the data is structured in a consistent fashion.  This is well below the industry average so <a href="/contact.php">get in touch with us today!</a>  As you probably know, we will get back to you in no more than 24 hours.</p>
+			</div>
+			<div class="price">
+				<h3>Custom</h3>
+				<span class="number">Get a quote</span>
+				<p class="description">Due to the nature of the business, some sites can take much longer to make a solution to scrape the data.  We will review your request and verify we have correctly identified the data you want and how you want it structured.  Once we do this, that will give us a good idea of how much time and effort it will take us to complete and at that point, we can provide you a quote.  If you want a quote for something a bit more complex than what is stated in the Basic Scrape, <a href="/contact.php">contact us today!</a> We will get back to you in no more than 24 hours.</p>
 			</div>
 		</div>
-	</main>
-	<footer>
-		<div id="copyright">
-			copyright stuff here
-		</div>
-		
-	</footer>
-</body>
-</html>
+	</div>
+</main>
+<?php include('./footer.php') ?>

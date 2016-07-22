@@ -1,51 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="./css/stylesheet.css">
-	<meta charset="UTF-8">
-	<title>Scrape Your Website</title>
-</head>
-<body>
-	<header>
-		<div class="nav-container">
-			<h1 id="site-title">
-				<a href = "./index.php">Scrape Your <span class = "website"> .Website </span></a>
-			</h1>
-			<nav>
-				<tab> <a href = "./about.php"> About </a> </tab>
-				<tab> <a href = "./prices.php"> Prices </a> </tab>
-				<tab> <a href = "./faq.php"> FAQ </a> </tab>
-				<tab> <a href = "./contact.php"> Contact </a> </tab>
-			</nav>
-		</div>
-		<div id="logo">
-			<img src="./imgs/scraper.png" alt="Scrape your website Logo">
-		</div>
-	</header>
-	<main>
-		<div id="main-content">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum a velit sit amet blandit. In lectus tellus, dictum non magna id, viverra tincidunt risus. Mauris cursus erat non maximus ultrices. Etiam et mi est. Nam et quam quis augue iaculis venenatis vitae et nisi. Aliquam porttitor volutpat leo ac elementum. Pellentesque ornare orci ut odio convallis, sit amet sagittis arcu laoreet. Sed porta libero tellus, at cursus massa viverra nec. Donec velit augue, venenatis accumsan auctor eu, aliquet nec ante. In quis pharetra risus. Sed tincidunt lacus eget tellus imperdiet malesuada. Ut ac tempor metus, nec tempor augue. Duis dapibus odio nisi, vitae tempus turpis maximus et. Phasellus rhoncus sit amet ante pretium fringilla.</p><p>
-
-			Morbi ipsum nulla, faucibus vitae dapibus at, lacinia a dui. Etiam lobortis maximus risus nec tincidunt. Integer eget dui vitae enim dignissim placerat sit amet sit amet felis. Pellentesque pharetra volutpat ex, sit amet sodales est molestie at. Pellentesque tellus lorem, vehicula at mi ut, facilisis sollicitudin dolor. Maecenas sagittis dui et massa posuere, vel congue arcu posuere. Phasellus scelerisque turpis sit amet nisi sollicitudin tempor. Morbi blandit ornare felis, id pharetra nisl bibendum quis. Phasellus scelerisque elit vel erat elementum, vitae cursus purus accumsan. Vestibulum tempus, odio eget ultrices lobortis, ipsum nisi porttitor lacus, nec vehicula purus lectus ultrices eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id lacus augue.</p>
-		</div>
-		<div id="home-contact">
-			<form id="home-contact-form" action="/form-mailer.php" method="post">
-				<label for="name">Name:</label>
-				<input name="name" placeholder="Name..." type="text">
-				<label for="email">Email:</label>
-				<input name="email" placeholder="Email..." type="text">
-				<label for="message">Message us:</label>
-				<input name="message" placeholder="Ask us a question!" type="text">
-				<input name="submit" type="submit">
-			</form>
-		</div>
-	</main>
-	<footer>
-		<div id="copyright">
-			copyright stuff here
-		</div>
-		
-	</footer>
-</body>
-</html>
+<?php include('./header.php') ?>
+<main>
+	<div id="main-content">
+		<h1> About </h1>
+		<p>Welcome to our site!  We are professional programmers that love to manipulate data and discovered web scraping on accident at one point!  We thought it was super fun and thus, this website was born.</p>
+		<p>  We guarantee quick turn-around (within 24 hours) for any scraping requests.  We've done work for sales teams scraping leads off of big sites going tens of thousands of pages deep.  We can format the data and return it to you however you'd like, whether that be in a CSV, XLXS, JSON.. etc</p>
+		<p>For more details about the website you'd like to scrape, <a href="/contact.php">contact us today</a> so we can give you a quote to get the data in your hands.  Let's scrape your website! :)</p>
+	</div>
+</main>
+<?php include('./footer.php') ?>

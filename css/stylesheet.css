@@ -248,12 +248,12 @@ FAQ COMPONENTS
 */
 
 .q{
-	background-color: #607D8B;
-	color: #E3F4FD;
+	/*background-color: #9E9E9E;*/
+	color: #9E9E9E;
 	font-size: 1.5em;
 	display: inline-block;
 	padding: 3px 5px;
-	border-radius: 5px;
+	border-radius: 2px;
 	margin: 3px;
 }
 

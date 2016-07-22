@@ -191,13 +191,13 @@ HOME CONTACT COMPONENTS
 	text-decoration: bold;
 }
 
-#home-contact input{
+#home-contact input, textarea{
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: 12px;
 }
 
-input {
+input , textarea{
 	border-radius: 2px;
 	border: 0;
 	padding: .3em;

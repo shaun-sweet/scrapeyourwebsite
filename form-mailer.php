@@ -5,9 +5,6 @@
     //Email information
     $admin_email = "info@scrapeyour.website";
 
-    $site_qty = $_POST['quantity'];
-    $data_sets = $_POST['data-sets'];
-    $payment = $_POST['payment'];
     $name = $_POST['name'];
     $email = $_POST['email'];
     
@@ -15,10 +12,7 @@
     $email_content = "
     Inquirer: {$name} \n
     Email: {$email} \n
-    Number of Websites Requested: {$site_qty} \n
-    Requested Data from sites: {$data_sets} \n
-    Payment Method: {$payment} \n
-    Additional Comments: {$message}
+    Message: {$message}
     ";
     
     //send email
